@@ -8,33 +8,51 @@
     <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
+  <header class="header">
+    <a class="logo" href="index.html">Fashion</a>
+    <nav class="nav">
+      <ul>
+        <li><a href="kategori.html">Kategorier</a></li>
+        <li><a href="produktliste.html">Alle produkter</a></li>
+        <li><a href="produkt.html">Produkt</a></li>
+      </ul>
+    </nav>
+  </header>
     <main>
-      <header class="header">
-        <a class="logo" href="index.html">Fashion</a>
-        <nav class="nav">
-          <ul>
-            <li><a href="kategori.html">Kategorier</a></li>
-            <li><a href="produktliste.html">Alle produkter</a></li>
-            <li><a href="produkt.html">Produkt</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="produkt">
-          <div>
-        <h1>Puma T-shirt</h1>
-        <img src="img/1533.webp" alt="1533">
-      </div>
-      <div>
-        <h2>Men's T-shirt</h2>
-        <h3>Pris: 899 DKK</h3>
-      </div>
-      <div>
-        <p>Dette er en T-shirt</p>
-      </div>
-  </div>
-    <footer class="footer">
-        <p>&copy; 2023 Emma Larsen MMD2Sem. All rights reserved.</p>
-      </footer>
+      <section class="purchaseBox">
+        <img src="http://assets.myntassets.com/assets/images/2015/11/17/11447736932686-113016-3ff8sf.jpg" alt="1528">
+        <h3>Black Fleece Jacket</h3>
+        <p><span class="brand">PUMA</span> Men's Jacket</p>
+        <form>
+          <label>
+            Choose a size
+            <select name="size">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </label>
+          <button>Add to basket</button>
+        </form>
+      </section>
+      <section class="info">
+        <h2>Product Information</h2>
+        <dl>
+          <dt>Model name</dt>
+          <dd>Ferrari Fleece</dd>
+          <dt>Color</dt>
+          <dd>Black</dd>
+          <dt>Inventory number</dt>
+          <dd>1528</dd>
+        </dl>
+        <h1>Puma</h1>
+        <p>PUMA is the World's Fastest Sports Brand</p>
+      </section>
     </main>
+    <footer class="footer">
+      <p>&copy; 2023 Emma Larsen MMD2Sem. All rights reserved.</p>
+    </footer>
+    <script src="js/produkt.js"></script>
 </body>
 </html>
