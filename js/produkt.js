@@ -11,7 +11,7 @@ function showProduct(product){
         product.brandname;
         document.querySelector(
             "img"
-        ).src = "http://assets.myntassets.com/assets/images/2015/11/17/11447736932686-113016-3ff8sf.webp";
+        ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
 }
 

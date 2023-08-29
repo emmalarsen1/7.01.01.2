@@ -61,3 +61,43 @@ img{
       margin: 0;
     }
       /***************** footer *******************/
+
+      /***************** breadcrumbs **************/
+      /* Reset default list styles */
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for breadcrumb items */
+.breadcrumbs li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* Style for breadcrumb links */
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Style for the last breadcrumb (current page) */
+.breadcrumbs li:last-child {
+  color: #555;
+}
+
+article{
+  position: relative;
+}
+
+article.soldOut::after{
+  content: "Sold Out";
+  padding: 1em;
+  background-color: blue;
+font-family: 'Courier New', Courier, monospace;
+position: absolute;
+margin-bottom: 500%;
+
+}
