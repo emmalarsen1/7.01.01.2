@@ -1,4 +1,4 @@
-fetch("https://kea-alt-del.dk/t7/api/products/")
+fetch("https://kea-alt-del.dk/t7/api/products?limit=50")
     .then((res) => res.json())
     .then(data => showProducts(data))
 
@@ -21,6 +21,7 @@ if (product.soldout){
     //produktet er udsolgt
     copy.querySelector("article").classList.add("soldOut");
 }
+copy.querySelector(".readmore").setAttribute("href", `produkt.html?id=${product.id}`)
 //appende
 document.querySelector(".flexbox1").appendChild(copy);
     }
