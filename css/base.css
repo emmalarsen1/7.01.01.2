@@ -92,12 +92,23 @@ article{
   position: relative;
 }
 
-article.soldOut::after{
-  content: "Sold Out";
+article.soldOut::before{
+  content: "SOLD OUT";
   padding: 1em;
-  background-color: blue;
-font-family: 'Courier New', Courier, monospace;
-position: absolute;
-margin-bottom: 500%;
+  background-color: rgb(226, 112, 92);
+  font-weight: bold;
+  position: absolute;
+  bottom: 40%;
+  right: 31%;
+}
 
+
+article.onSale::after{
+  content: "SALE";
+  padding: 1em;
+  background-color: rgb(193, 226, 28);
+  font-weight: bold;
+  position: absolute;
+  bottom: 90%;
+  right: 5%;
 }

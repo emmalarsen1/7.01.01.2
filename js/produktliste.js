@@ -21,6 +21,10 @@ if (product.soldout){
     //produktet er udsolgt
     copy.querySelector("article").classList.add("soldOut");
 }
+if (product.discount){
+    //produktet er på udsalg
+    copy.querySelector("article").classList.add("onSale");
+}
 copy.querySelector(".readmore").setAttribute("href", `produkt.html?id=${product.id}`)
 //appende
 document.querySelector(".flexbox1").appendChild(copy);
