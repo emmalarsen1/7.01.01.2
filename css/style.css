@@ -1,33 +1,19 @@
 /***************** kategori *******************/
-.body1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    margin: 0;
-    background-color: #f0f0f0;
-  }
-  
-  .box {
-    width: 30%;
-    height: 130px;
-    margin: 10px;
-    background-color: #70b7e7;
-    border-radius: 35px;
-    text-align:center;
-    display: flex; /* Add this to make the text container a flex container */
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-  }
-  .body1 a {
- 
+ .kategoricss{
+    list-style: none;
+}
+.kategoriatag{
     text-decoration: none;
-    color: #342f2f;
-    font-size: 24px;
-  }
-  .body1 a:hover {
-    color: rgb(255, 255, 255);
-  }
+    color: #0b0b0b;
+    font-size: 24px; 
+}
+.kategoriatag:hover {
+    color: #70b7e7;
+    }
+.templateclass{
+    display: grid;
+    grid-template-columns: 2;
+}
 /***************** kategori *******************/
 /***************** index *******************/
 
@@ -80,12 +66,13 @@ margin-top: 3%;
 }
 /***************** produktliste *******************/
 /***************** produkt *******************/
-.produkt{
-display: grid;
-grid-template-columns: 1fr 1fr;
-margin: 5%;
-}
+
 img{
 max-width: 450px;
 
+}
+.produktside{
+    display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 5%;
 }

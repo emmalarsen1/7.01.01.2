@@ -10,6 +10,7 @@ img{
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
+      background-color: #959292;
     }
     
     .header {
@@ -70,6 +71,7 @@ img{
   margin: 0;
 }
 
+
 /* Style for breadcrumb items */
 .breadcrumbs li {
   display: inline-block;
@@ -82,6 +84,10 @@ img{
   text-decoration: none;
   color: #333;
 }
+.breadcrumbs li a:hover {
+  color: #70b7e7;
+}
+
 
 /* Style for the last breadcrumb (current page) */
 .breadcrumbs li:last-child {
